@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h1> Dicas Avançadas: </h1>
+    <p> Para você, que já está com até que o básico na mente, e está se perguntando, o que fazer para prosseguir ou para ter de conhecimento extra, aqui está uma lista com vários pontos importantes:</p>
+    <ul>
+	<li> Para sempre estar praticando, faça automatizações do seu dia a dia, fazendo script que de alguma forma agilizem seu trabalho. </li>
+	<br>
+	<li> Monte um plano de estudos, listando um tempo de estudo diário e quantos dias por semana vai estar praticando, como por exemplo, 3-5 dias com 30 a 60 minutos de duração. Também faça isso para seus projetos, por exemplo 4-6 semanas de fundamentos e 2-4 projetos feitos com o que se está estudando. </li>
+	<br>
+	<li> Faça todos os seus projetos, dos mais pequenos até os realmente grandes num GitHub, para salvar e deixar salvo para um portfólio, numa entrevista de emprego é extremamente importante ter o diploma, porém para seguir em frente vão querer ver os seus projetos pessoais. </li>
+	<br>
+	<li> Tente fazer projetos para outras pessoas, deixe no seu portfólio também, explique o que faz, mostre o código e o resultado, como chegou naquele resultado e como você pensou em chegar naquele ponto. </li>
+    <br>
+	<li> Estudar os documentos oficiais das linguagens de programação é de grande ajuda. </li>
+	<br>
+	<li> Ler os códigos de outras pessoas também ajuda muito na sua lógica e interpretar descobrindo o que o outro estava fazendo e pensando apenas lendo o código. </li>
+	</ul>
+	<img src="https://colegioplanck.com.br/wp-content/uploads/2021/06/Colegio-Planck-Profissao-programador-o-que-faz-esse-profissional-tao-disputado-no-mercado-arte-Autores-Grupo-S2-Marketing-Freepik.jpg" alt="Imagem ilustrativa" width="800">
+  </div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="curiosidades.html">Curiosidades sobre programação</a></p>
+		<p style= "font-size: 17.5px;"><a href="documento.html">Documentação oficial</a></p>
+		<p style= "font-size: 17.5px;"><a href="github.html">O que é GitHub?</a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>

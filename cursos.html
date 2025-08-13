@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h1>Alguns cursos que são recomendados</h1>
+    <p>Aqui fica uma lista de 6 cursos que possuem boas críticas:</p>
+	<ol>
+	<li> A <a href="https://www.coursera.org/courseraplus/?utm_medium=sem&utm_source=gg&utm_campaign=b2c_latam_x_coursera_ftcof_courseraplus_cx_dr_tt_gg_sem_bd-bd_br_en-pt_m_hyb_25-08_langtest&campaignid=22859199805&adgroupid=182032226334&device=c&keyword=coursera&matchtype=b&network=g&devicemodel=&creativeid=767153254735&assetgroupid=&targetid=kwd-36222484221&extensionid=&placement=&gad_source=1&gad_campaignid=22859199805&gbraid=0AAAAADdKX6ZwmqoBKfme2PH5ZxHiHdBDn&gclid=Cj0KCQjwzOvEBhDVARIsADHfJJSC3aknriyVXm4Bavd-C6Io1KKLgnUs9xKdqtjQX-V4VGnslXcp9u0aAjqdEALw_wcB">Coursera</a>: Oferece cursos de universidades renomadas, como Stanford, Harvard e MIT, além de certificados e especializações. </li>
+	<br>
+	<li> A <a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=MX_FF-CONV_BR_Search-Brand_Direct-la.PT_Google&campaigntype=Search&portfolio=BrandDirect&language=PT&product=Course&test=&audience=Keyword&topic=&priority=&funnel=Conversion&utm_content=&utm_term=_._ag_115247525277_._ad_762942875642_._kw_udemy_._de_c_._dm__._pl__._ti_kwd-296956216253_._li_1031598_._pd__._&matchtype=b&gad_source=1&gad_campaignid=11849977823&gbraid=0AAAAADROdO3D_8ClZhiJH4AULYMpwAGS_&gclid=Cj0KCQjwzOvEBhDVARIsADHfJJT9T6cNcN-S-eBUKg0XL_cEDkk6utZoZKK5rhwIquksX6WE2dFifHkaAutgEALw_wcB">Udemy</a>: Cursos para todos os níveis, desde iniciante até o avançado e uma grande variedade de cursos acessíveis no bolso. </li>
+	<br>
+	<li> A <a href="https://www.edx.org/">edX</a>: É parceira de universidades como Harvard, MIT, Berkeley, cursos gratuitos com opção de certificado pago e áreas variadas incluindo ciência da computação e inteligência artificial. </li>
+	<br>
+	<li> A <a href="https://www.freecodecamp.org/">freeCodeCamp</a>: Totalmente gratuito, focado em desenvolvimento web (HTML, CSS, JavaScript), Python, Data Science e oferece projetos práticos e certificações. </li>
+	<br>
+	<li> A <a href="https://www.codecademy.com/">Codeacademy</a>: Plataforma interativa para aprender a programar na prática, cursos em HTML, CSS, JavaScript, Python, SQL e mais. </li>
+	<br>
+	<li> A <a href="https://www.pluralsight.com/">Pluralsight</a>: Conteúdo técnico avançado voltado para profissionais, cursos sobre DevOps, segurança, cloud computing e linguagens de programação. </li>
+	</ol>
+  </div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="index.html">Início</a></p>
+		<p style= "font-size: 17.5px;"><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>

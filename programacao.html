@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	  text-align: justify;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h1>O que é Programação, afinal de contas?</h1>
+    <p>Antes de saber o que é programação, é importante entender uma coisa: Os computadores não fazem nada sozinhos. Para criar seja um site, um aplicativo ou até um software é preciso alguém para dizer exatamente o que eles devem fazer. E é justamente isso que a programação faz, ou melhor, os programadores.</p>
+	<p>Utilizando de linguagens, lógicas, algoritmos e muito mais, desenvolvedores transformam suas ideias em códigos-fonte que o computador entende. Esses códigos-fonte são uma sequência de comandos que mostram ao computador o que fazer, desde coisas simples, como mostrar informações na tela, até criar aplicativos, sites e programas de software.</p>
+	<p>A programação não se limita apenas à escrita de código, ela envolve também o planejamento, a resolução de problemas e a colaboração em equipe. Os programadores precisam pensar logicamente e sistematicamente para criar soluções eficientes e eficazes para os desafios que enfrentam.</p>
+    <img src="https://blog.ebaconline.com.br/blog/wp-content/uploads/2022/12/rhntgjz3cfkjkv6pq8mjw-e1671317351710.png" alt="Imagem de alguém programando" width="800">
+    <h1>Benefícios de entender como funciona e de colocar em prática</h1>
+	<p>Um dos principais benefícios da programação é a automação de tarefas. Ao criar scripts e programas, é possível automatizar processos repetitivos, economizando tempo e reduzindo a possibilidade de erros humanos. Isso é particularmente útil em ambientes de trabalho onde a eficiência é crucial.</p>
+	<p>Outro benefício é o desenvolvimento de soluções personalizadas. A programação permite que empresas e indivíduos criem software sob medida para atender a necessidades específicas, desde sistemas de gerenciamento até aplicativos voltados para o consumidor. Essa personalização pode levar a um aumento significativo na eficiência e na satisfação do cliente. </p>
+	<p>Além disso, a programação desenvolve habilidades de pensamento crítico e resolução de problemas. Ao enfrentar desafios de codificação, os programadores aprendem a analisar problemas complexos, dividir tarefas em etapas gerenciáveis e encontrar soluções criativas. Essas habilidades são valiosas em muitas áreas da vida pessoal e profissional. </p>
+	<img src="https://blog.ebaconline.com.br/blog/wp-content/uploads/2022/12/noroot-10.png" alt="Imagem de alguém mexendo com tecnologia" width="800">
+  </div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="curiosidades.html">Curiosidades sobre programação</a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>

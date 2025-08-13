@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h2>Livros sobre programação:</h2>
+    <p>Aqui há uma lista de 3 livros que eu recomendo, são versáteis e ajudam no entendimento de fundamentos, junto com o nome estará um link para compra, caso queira.</p>
+	<ol>
+	<li> O livro "<a href="https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634/ref=sr_1_1?adgrpid=151025974313&dib=eyJ2IjoiMSJ9._BQwo6gWOY4D3ovtes49F8xVoGp_Ni7R6tB4rBFOYEOy3jmDckMazuAVaarDXd-hscF2OrzX25nyI9ywitLK_N8cUIzRzDFqDsyGu7G8QSQMkYyHGYBZCUmIAURk0ZsHBmeaJEd6Nd-IKB6hqBU6FGA-1eHDNFwofZL6lqqfsHH4MtziSYVs46i_QaMNWwEI1Jlx2zjFkvlkcjs-7lJDiRZvZaaZQNtR6UWa2mX6KWo.FUE9OfNahwSGwUuFAn_GWEOxZXbIvRTSXGehyZWoKCE&dib_tag=se&hvadid=660221240840&hvdev=c&hvlocphy=1031598&hvnetw=g&hvqmt=e&hvrand=15712869050904059198&hvtargid=kwd-309166023971&hydadcr=1389_13490970&keywords=entendendo+algoritmos&mcid=43aa658df42934c4a394bd5801ffd337&qid=1755060844&s=books&sr=1-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">Entendendo Algoritmos</a>" explica o que são algoritmos, como funcionam e possui exemplos. Didática boa. </li>
+	<br>
+	<li> O livro "<a href="https://www.amazon.com.br/C%C3%B3digo-limpo-Robert-C-Martin/dp/8576082675/ref=sr_1_1?adgrpid=133608874532&dib=eyJ2IjoiMSJ9.sBTjfwPCutWkDIRKC6d8WKlsWsI810ml2xB8vhI0eCy8Gm2m_CFG3kX3bQRq92arToR18XnnCi5v1WNxj3zi9KytU1ys8-_zKThZirN64qfN6AsmTdif2mTm-kaXcOKlsQ3B4112r2tSl6WGR3G75zdtK2BTTee40agtd44Hv-pDZ8D6HP58WuTyPG03ZNzl7Et4dx8KwuMhiCTXwTYz7CsjbzYIiv76zezom6Gzuj0Wits9-QHmlnfWQhvY8PVM7M2rhcxW5CqQyDyfN888B0iM2cyQHBmYvwCfQD5c67U.JYz3V0ZT3GsAqcuMc3EPzPsTTRgUe70_39ijrLk8d3c&dib_tag=se&hvadid=593184318631&hvdev=c&hvlocphy=1031598&hvnetw=g&hvqmt=e&hvrand=15715806143240068024&hvtargid=kwd-447114230604&hydadcr=25494_13512564&keywords=codigo+limpo&mcid=21db540ac37432589c69c60ced8560f1&qid=1755060938&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">Código Limpo</a>" explica como tornar seu código mais limpo, menos poluído e menos falho. </li>
+	<br>
+	<li> O livro "<a href="https://www.amazon.com.br/Introdu%C3%A7%C3%A3o-Programa%C3%A7%C3%A3o-com-Python-programa%C3%A7%C3%A3o/dp/8575228862/ref=pd_lpo_d_sccl_2/132-6102296-8838653?pd_rd_w=nf4OF&content-id=amzn1.sym.a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_p=a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_r=KK91SRXQM1RQEVD37VYD&pd_rd_wg=UU0tw&pd_rd_r=9fe4765c-498a-4d47-afa1-5002af607595&pd_rd_i=8575228862&psc=1">Introdução à Programação com Python</a>" explica a tão temida lógica de programação, porém em uma linguagem simples como Python, com uma didática simples e incrível, possui atividades ótimas para o desenvolvimento inicial. </li>
+	</ol>
+  </div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="index.html">Início</a></p>
+		<p style= "font-size: 17.5px;"><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>

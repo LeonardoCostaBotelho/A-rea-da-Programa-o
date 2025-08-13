@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+    <h1>Como entrar para o mundo da programação? E o que preciso saber?</h1>
+    <p>Duas perguntas recorrentes para pessoas novas no assunto. Aqui vai uma lista de algumas principais coisas que você deveria pensar sobre para conseguir ingressar na área:</p>
+	<ul>
+	<li> Saiba uma ou mais linguagens de programação: Isso varia de acordo com a sua área. Saber uma ou mais linguagens de programação é extremamente importante. Para desenvolvedores web, os que focam no Front-End (parte que o usuário vê), o HTML, CSS e JS (JavaScript) são o bom e velho feijão com arroz que praticamente são os que mais serão utilizados, texto, design e funcionalidade. Para os outros tipos de programadores, o foco maior é o Back-End (parte que o usuário não vê), trabalhando muito mais com lógica e precisando de outras linguagens, como Python, Java, Ruby, C++, C#, entre muitos outros. </li>
+	<br>
+	<li> Aprenda as noções básicas e avançadas sobre programação: Aprender os fundamentos básicos, como lógica de programação, estruturas de controle, tipos de dados, funções, algoritmos e variáveis, seja por meio de cursos onlines de graça disponíveis, documentação oficial na web, livros sobre o tema, faculdades ou cursos profissionalizantes.</li>
+	<br>
+	<li> Entenda como funciona os comandos na prática: Fazer isso é essencial para adquirir prática e experiência com códigos, variar cada vez mais em projetos pessoas. </li>
+	<br>
+	<li> Participe de fóruns, comunidades e eventos: Uma das coisas mais importantes, participar de eventos sobre o tema, seja para conseguir conhecimento extra com profissionais ou contatos para os seus serviços, conseguindo até uma indicação para uma vaga de emprego, sempre é bom ter contatos para esses casos. </li>
+	<br>
+	<li> GitHub: Juntamente com a participação em locais assim, faça um portfólio no GitHub, assim salvando seus progressos e trabalhos, para principalmente usar isso na sua entrevista. </li>
+	</ul>
+	
+	<img src="https://abstartups.com.br/wp-content/uploads/2025/06/Qual-a-tecnologia.jpg " alt="Imagem sobre tecnologia" width="800">
+  </div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="curiosidades.html">Curiosidades sobre programação</a></p>
+	    <p style= "font-size: 17.5px;"><a href="linguagens.html">Linguagens de Programação </a></p>
+		<p style= "font-size: 17.5px;"><a href="cursos.html"> Cursos </a></p>
+		<p style= "font-size: 17.5px;"><a href="livros.html"> Livros </a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>

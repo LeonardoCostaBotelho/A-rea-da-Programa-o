@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> A área da Programação </title>
+   
+<style>
+
+    body {
+      margin: 0;
+	  font-family: Arial, Sans-Serif;
+	}
+	
+	/* Aba superior = header */
+	header {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Aba inferior = footer */
+	footer {
+	  background-color: #333131;
+	  color: white;
+	  padding: 10px;
+	  text-align: center;
+	}
+	
+	/* Container principal, que envolve o menu, conteúdo e as imagens que estão dispostas */
+	.container {
+	  display: flex;
+	  min-height: calc(100vh - 100px); /* vh significa em porcentagem do tamanho da tela, e o cálculo realiza 100% da tela menos 100px para ajustar */
+	}
+	
+	/* Menu Lateral do lado esquerdo, que é para estar junto com o footer e o header */
+	.menu {
+	  background-color: #333131;
+	  width: 200px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	}
+	
+	/* Botões do menu na lateral esquerda */
+	.menu button {
+	  background-color: #D67D18;
+	  color: #ecf0f1;
+	  display: block;
+	  border: none;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 8px;
+	  font-size: 16px;
+	  transition: background-color: 0.3s;
+	}
+	
+	/* A cor que o botão deve estar quando pressionado ou apenas o mouse por cima */
+	.menu button:hover {
+      background-color:	#F5932C;
+	}
+	
+	/* Conteúdo principal */
+	.content {
+	  flex: 1;
+	  padding: 20px;
+	  text-align: justify;
+	}
+	
+	/* Coluna na direita */
+	.right-menu {
+      width: 175px;
+      background-color: #A1A1A1;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+	}
+	
+	/* Opções para clicar nessa coluna */
+    .aside {
+      flex: 1;
+      padding: 10px;
+      background-color: #A1A1A1;
+      margin-left: 1px;
+	  text-align: left;
+	  font-size: 5vh;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> A área da Programação </h1>
+</header>
+
+<div class="container">
+
+  <!-- Menu da lateral esquerda -->
+  <div class="menu">
+  
+    <button><a href="index.html">Início</a></button>
+    <button><a href="programacao.html">O que é programação?</a></button>
+    <button><a href="ramos.html">Ramos desta área</a></button>
+	<button><a href="mundo.html">Como entrar para o mundo da programação? E o que preciso saber?</a></button>
+	<button><a href="avancado.html">Recomendações mais avançadas</a></button>
+	<button><a href="curiosidades.html">Curiosidades</a></button>
+	<button><a href="contato.html">Contato</a></button>
+	
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="content">
+  
+    <h1>Quais os ramos da programação?</h1>
+    <p> Na programação há várias rotas, ramos ou caminhos, como desejar chamar, para prosseguir com programação. Aqui há uma lista de várias opções dispostas nesta área:</p>
+	<h2> Temos as mais famosas, que são: </h2>
+	<h3>Desenvolvedor/Programador de Jogos</h3>
+	<p>Tem como objetivo criar jogos para diferentes plataformas, como consoles, PC e dispositivos móveis. Dentro desse ramo tem mais variações, por conta dos diferentes dispositivos disponíveis atualmente, isso quer dizer que, caso se queira desenvolver jogos, deve escolher para qual plataforma, seja um console (XBOX, Playstation), mobile (Android ou IOS), PC e entre outros. </p>
+    <h3>Programador Mobile</h3>
+	<p>Diferentemente do que cria jogos, este aqui foca em outros tipos de aplicativos, seja para segurança, seja para comunicação, etc.</p>
+	<h3>Programador Web </h3>
+	<p>Este programador trabalha na web, criando sites, sistemas webs, blogs, entre outros. Um exemplo do que um programador web faz é esse próprio site, mas claro que bem mais produzido e finalizado. </p>
+	<img src="https://media.istockphoto.com/id/1356364287/pt/foto/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=612x612&w=0&k=20&c=febtBieTOAo1mrPf4Bp8hJ78R-2pUnivYfvIaZhVzkc= " alt="Imagem de programador" width="800">
+	<h2> Mas também existem outras mais requisitadas no mercado de trabalho, como:</h2>
+	<h3>Administração de Rede de Computadores</h3>
+	<p>Este programador lida mais com a parte administrativa das redes. Tem como objetivo gerenciar os computadores dentro de uma empresa, de modo que as máquinas sejam interligadas e tenham fluxo de informações.  Além disso, também faz parte do seu papel desenvolver melhorias para esses sistemas.</p>
+	<h3>Analista de Segurança</h3>
+	<p>O analista de segurança tem por objetivo desenvolver sistemas que realizam a prevenção desses ataques.</p>
+	<h3>Administrador de Banco de Dados</h3>
+    <p> O administrador de banco de dados tem como funções principais a instalação, configuração e administração de todas essas informações.  Este profissional deve prezar pela manutenção de um ou mais banco de dados, garantindo que tudo esteja sendo armazenado, com alta performance e também sendo distribuído de forma segura.</p>
+	<h3> Desenvolvedor de Software </h3>
+	<p>A profissão de desenvolvedor de software é uma das mais procuradas no mercado de tecnologia. Esses profissionais criam programas, aplicativos e sistemas para atender às necessidades de empresas e consumidores. Neste meio eles são um dos que mais utilizam linguagens de programação diferentes, sempre priorizando a mais funcional para o trabalho requisitado.</p>
+    <h3> Engenheiro de Dados </h3>
+	<p> O engenheiro de dados é o profissional responsável por projetar e construir sistemas de armazenamento e processamento de dados. Ele trabalha com grandes volumes de dados, desenvolvendo pipelines para garantir que as informações sejam processadas de forma eficiente e segura.</p>
+    <img src="https://emaster.cloud/wp-content/uploads/sites/10/2023/11/banco-de-dados.jpg" alt="Imagem de um banco de dados" width="800">
+	<p> Existem muitas outras áreas, que se você se interessou pode se aprofundar ainda mais, aqui só foi posto alguns exemplos, bem como os principais e mais falados, porém o mercado pro programador é imenso, então há muitas outras escolhas!</p>
+
+</div>
+
+  <!-- Menu da direita, com opções para clicar e saber mais -->
+  <div class="right-menu">
+  
+    <div class="aside">
+	    <h6>Tópicos referentes a esta página:</h6>
+        <p style= "font-size: 17.5px;"><a href="curiosidades.html">Curiosidades sobre programação</a></p>
+	</div>
+ 
+  </div>
+</div>
+
+<footer>
+  <p>Desenvolvido por Leonardo da Costa, usuário ativo na web - © 2025</p>
+</footer>
+
+</body>
+</html>
